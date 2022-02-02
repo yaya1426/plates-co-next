@@ -1,12 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a sample poc project, created for a case study with Lean Scale
 
-## Getting Started
+## Summary
+This is a proof of concept for new sales system of Plates Co. This idea is to incentivise customers to spend more.
+The project is created using a Next.js empty starter.
 
-First, run the development server:
+
+## Running the App
+Install necessary dependencies using:
+```bash
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 

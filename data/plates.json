@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Red Plate",
+        "code": "R01",
+        "price": 32.95
+    },
+    {
+        "name": "Green Plate",
+        "code": "G01",
+        "price": 24.95
+    },
+    {
+        "name": "Blue Plate",
+        "code": "B01",
+        "price": 7.95
+    }
+]

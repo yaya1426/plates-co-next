@@ -1,0 +1,17 @@
+[
+    {
+        "rate": 4.95,
+        "minValue": 1,
+        "maxValue": 50
+    },
+    {
+        "rate": 2.95,
+        "minValue": 51,
+        "maxValue": 90
+    },
+    {
+        "rate": 0,
+        "minValue": 90,
+        "maxValue": -1
+    }
+]

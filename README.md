@@ -28,8 +28,16 @@ The interfaces that are used within components, and also mapped the JSON objects
 - **utils**:
 Functions and helpers used within copmoents. This includes primarily the logic for calculations, and evaluating data.
 
+### Data fetching
+For simplicity of the making the POC work, data is fetched directly from JSON files. The fetching itself to the Components is not a concern,
+since a function has been created in utils/fetch-data.ts that is responsible for managing the data fetching process itself.
 
+This is to follow the Separation-of-Concerns (SoC) approach where dependancy is decoupled. So in this manner, this fetching data can be changed, to fetch data from a Server API and the components will work seamlessly.
 
+To also allow dynamic data, the **Offer Rules** and **Delivery Rates** exist in the Data files, and are able to modify seamlessly to change the data easily without code change. They are processed in the basket by the function **CalculateTotalPrice** that dynamically extracts the rules and provides the outcome. A separate model is also created for **OfferRule** and **DeliveryRate** accordinlgy to be strongly typed, and easy to detect changes when they occur.
+
+### Data Validation
+To avoid rubbish data, the input for the basket allows only to add products that do exist in the Product catalouge, based on the dynamic data that is fetched from the Data Fetching process.
 ## Running the App
 Install necessary dependencies using:
 ```bash

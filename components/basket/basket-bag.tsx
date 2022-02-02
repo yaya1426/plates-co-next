@@ -14,7 +14,6 @@ export const BasketBag: React.FC<Props> = ({ basketItems }) => {
                             <div className="fw-bold">{item.name} - {item.code}</div>
                             ${item.price} x {item.quantity}
                         </div>
-                        <span className="badge bg-danger rounded-pill">X</span>
                     </li>
                 )
             })}

@@ -12,20 +12,20 @@ Since Next.js is basically just react but with some boilerplate added, we are us
 ### Folder Structure
 Folder is structured with separation of concern to allow frontend resliency.
 
-- pages
+- **pages**:
 Routed pages of next. We only have one page since this is a very simple application.
 
-- components
+- **components**:
 Includes all logical components used within pages. These components are simple and used props to pass around logic between components.
 
-- data
+- **data**:
 Acts as data files that can be easily modified in JSON format. 
 (We can easily delete this if we want to swap with an API backend data fetching approach)
 
-- models
+- **models**:
 The interfaces that are used within components, and also mapped the JSON objects to from the data JSON files.
 
-- utils
+- **utils**:
 Functions and helpers used within copmoents. This includes primarily the logic for calculations, and evaluating data.
 
 
